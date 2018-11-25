@@ -3,7 +3,7 @@ from Crypto.Cipher import AES
 import hashlib
 from PySmartCrypto import keys
 import struct
-from PySmartCrypto.py3rijndael import Rijndael
+from PySmartCrypto.py3rijndael.rijndael import Rijndael
 
 BLOCK_SIZE = 16
 SHA_DIGEST_LENGTH = 20
