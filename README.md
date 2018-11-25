@@ -1,5 +1,5 @@
 # SmartCrypto
-SmartView2 Handshake API implementation
+SmartView2 Handshake API implementation in pure python3 with example of how to use handshake to send commands
 
 Samsung Smart TV H/J (2014/2015) models SmartView2 Crypto Handshake C/Python implementation.
 
