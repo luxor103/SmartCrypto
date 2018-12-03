@@ -133,6 +133,8 @@ while not ctx:
         print("Pin incorrect. Please try again...\n")
 
 currentSessionId = AcknowledgeExchange(SKPrime)
+print("SessionID: " + str(currentSessionId))
+
 ClosePinPageOnTv()
 print("Authorization successfull :)\n")
 
