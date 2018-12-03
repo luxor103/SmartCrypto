@@ -35,7 +35,7 @@ def generateServerHello(userId, pin):
     pinHash = sha1.digest()
     aes_key = pinHash[:16]
     print("AES key: "+aes_key.hex())
-    iv = "\x00" * BLOCK_SIZE
+    iv = b"\x00" * BLOCK_SIZE
     cipher = AES.new(aes_key, AES.MODE_CBC, iv)
     encrypted = cipher.encrypt(bytes.fromhex(keys.publicKey))
     print("AES encrypted: "+ encrypted.hex())
@@ -69,7 +69,7 @@ def parseClientHello(clientHello, dataHash, aesKey, gUserId):
     print("pEncWBGx: " + pEncWBGx.hex())
     pEncGx = DecryptParameterDataWithAES(pEncWBGx)
     print("pEncGx: " + pEncGx.hex())
-    iv = "\x00" * BLOCK_SIZE
+    iv = b"\x00" * BLOCK_SIZE
     cipher = AES.new(aesKey, AES.MODE_CBC, iv)
     pGx = cipher.decrypt(pEncGx)
     print("pGx: " + pGx.hex())
