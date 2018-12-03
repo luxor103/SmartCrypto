@@ -1,8 +1,8 @@
 from __future__ import print_function
-from PySmartCrypto import crypto
+import crypto
 import sys
 import re
-from PySmartCrypto.command_encryption import AESCipher
+from command_encryption import AESCipher
 import requests
 import time
 import websocket
