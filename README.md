@@ -15,3 +15,6 @@ After pairing it will print a ctx and session id
 On the last line of smartcrypto.py you can see the method send_command
 
 If you save the ctx and sessionid from the previous pairing session you can write code to call send_command again without needing to repair. just use the ctx and session id from before.
+
+     
+Note: H & J series tv's cannot be turned on over the network so the on command will not work. 
